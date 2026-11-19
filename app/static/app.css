@@ -1,0 +1,38 @@
+:root{--fg:#111;--muted:#6b7280;--line:#e5e7eb;--bg:#fff;--soft:#f6f7f9;--blue:#0043ea;--red:#b00020;--green:#0a7a2a}
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.45 system-ui,"Segoe UI",Arial,sans-serif;color:var(--fg);background:var(--bg)}
+header{display:flex;align-items:center;gap:18px;padding:8px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:10;flex-wrap:wrap}
+.brand{font-weight:700;font-size:16px}
+nav button{border:0;background:none;padding:7px 12px;border-radius:7px;cursor:pointer;font:inherit;color:#333}
+nav button.on{background:#e8eefc;color:var(--blue);font-weight:600}
+.conn{margin-left:auto;font-size:13px;padding:3px 10px;border-radius:12px;background:#ffe1e1;color:var(--red)}
+.conn.ok{background:#e3f6e8;color:var(--green)}
+main{padding:12px 16px 40px}
+.tab{display:none}.tab.on{display:block}
+.muted{color:var(--muted)}.bad{color:var(--red);font-weight:600}.good{color:var(--green)}
+button.b{padding:6px 12px;margin:0 6px 6px 0;cursor:pointer;border:1px solid #c7ccd4;border-radius:7px;background:var(--soft);font:inherit}
+button.b.primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+button.b:disabled{opacity:.5;cursor:default}
+input[type=date],input[type=text],select{font:inherit;padding:4px 6px;border:1px solid #c7ccd4;border-radius:6px}
+input[type=text]{min-width:320px}
+.box{border:1px solid var(--line);border-radius:9px;padding:10px 12px;margin:10px 0;background:#fafafa}
+.row{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin:6px 0}
+table.t{border-collapse:collapse;width:100%;margin:6px 0;font-size:13px}
+table.t td,table.t th{border:1px solid #e1e4e8;padding:3px 6px;vertical-align:top}
+table.t th{background:#f2f3f5;text-align:left}
+table.t td.n{text-align:right;white-space:nowrap}
+td.okc{color:var(--green)}td.badc{color:var(--red);font-weight:600}
+.warn{background:#fff3cd;border:1px solid #e0c060;padding:5px 9px;margin:6px 0;border-radius:6px}
+.err{background:#ffe1e1;border:1px solid #e09a9a;padding:5px 9px;margin:6px 0;border-radius:6px;white-space:pre-wrap}
+.info{background:#EAF2FF;color:#1B4F8F;padding:5px 9px;margin:6px 0;border-radius:6px}
+pre.log{background:#0f172a;color:#e2e8f0;padding:8px 10px;border-radius:7px;max-height:260px;overflow:auto;font-size:12px;white-space:pre-wrap}
+details{margin:6px 0}summary{cursor:pointer;font-weight:600}
+h2{font-size:18px;margin:6px 0 8px}h3{font-size:15px;margin:16px 0 6px;border-top:2px solid #333;padding-top:8px}h4{font-size:13px;margin:12px 0 4px}
+code{background:#f2f3f5;padding:1px 5px;border-radius:4px}
+.acc-sel{max-width:420px}
+/* вкладка «Правила»: редактор */
+table.rules tr.off td{opacity:.5}table.rules tr.chg td{background:#fff8e1}table.rules td.code{font-family:Consolas,monospace;font-size:12px;word-break:break-word;max-width:340px}
+.ed{background:#f7f9fc;border:1px solid #d7deea;border-radius:8px;padding:10px 12px}.ed .grid{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:flex-end;margin:6px 0}
+.ed .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:6px 0}.ed label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:#555}
+.ed label:has(input[type=checkbox]){flex-direction:row;align-items:center;gap:5px}.ed textarea{width:100%;box-sizing:border-box;font-family:Consolas,monospace;font-size:12px;border:1px solid #c7ccd4;border-radius:6px;padding:6px}
+input[type=number]{font:inherit;padding:4px 6px;border:1px solid #c7ccd4;border-radius:6px}

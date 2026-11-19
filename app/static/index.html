@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Помічник кешфлоу</title>
+<link rel="stylesheet" href="/static/app.css">
+<script>window.HELPER = { key: '__HELPER_KEY__', version: '__HELPER_VERSION__' };</script>
+</head>
+<body>
+<header>
+  <div class="brand">Помічник кешфлоу <span class="muted" id="ver"></span></div>
+  <nav id="tabs">
+    <button data-tab="bank" class="on">Звірка з банком</button>
+    <button data-tab="lint">Лінтер</button>
+    <button data-tab="rules">Правила</button>
+    <button data-tab="files">Файли</button>
+    <button data-tab="settings">Налаштування</button>
+  </nav>
+  <div id="conn" class="conn">…</div>
+</header>
+<main>
+  <section id="tab-bank" class="tab on"></section>
+  <section id="tab-lint" class="tab"></section>
+  <section id="tab-rules" class="tab"></section>
+  <section id="tab-files" class="tab"></section>
+  <section id="tab-settings" class="tab"></section>
+</main>
+<script src="/core/rules-engine.js"></script>
+<script src="/core/crm-model.js"></script>
+<script src="/core/linter.js"></script>
+<script src="/core/xlsx.js"></script>
+<script src="/core/recon.js"></script>
+<script src="/ui/combo.js"></script>
+<script src="/ui/linter-panel.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

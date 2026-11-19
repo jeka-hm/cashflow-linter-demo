@@ -1,0 +1,22 @@
+# Зібране й робоче — не в git (демо для GitHub Pages у docs/ — у git)
+dist/
+work/
+reports/
+tools/
+# Секрети й дані — ніколи
+privat_tokens.json
+виписка_*.json
+*signing-key*.json
+*.dat
+*.pem
+*.key
+.env
+app/data/
+# Службове
+__pycache__/
+*.pyc
+*.zip
+*.bak
+*.log
+.claude/
+node_modules/
